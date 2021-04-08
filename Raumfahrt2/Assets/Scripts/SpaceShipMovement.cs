@@ -18,6 +18,15 @@ public class SpaceShipMovement : MonoBehaviour
     private float rollInput;
     public float rollSpeed = 60f, rollAcceleration = 3.5f;
 
+    public Camera mainCam;
+    public Camera playerCam;
+
+    private void Start()
+    {
+        mainCam.enabled = false;
+        playerCam.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
        Move( new MovementInputs(Input.GetAxisRaw("Roll"), Input.GetAxisRaw("Hover"), Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Yaw"), Screen.width, Screen.height));

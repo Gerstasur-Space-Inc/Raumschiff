@@ -324,9 +324,13 @@ MonoBehaviour:
   forwardSpeed: 25
   strafeSpeed: 7.5
   hoverSpeed: 5
+  yawSpeed: 5
+  yawAcceleration: 1.2
   lookrateSpeed: 2.67
   rollSpeed: 90
   rollAcceleration: 3.5
+  mainCam: {fileID: 2236879101134756667, guid: d1940f0c42fb6d545ac89d3afcf401f1, type: 3}
+  playerCam: {fileID: 4894722261829371612}
 --- !u!54 &2310155918890354784
 Rigidbody:
   m_ObjectHideFlags: 0
