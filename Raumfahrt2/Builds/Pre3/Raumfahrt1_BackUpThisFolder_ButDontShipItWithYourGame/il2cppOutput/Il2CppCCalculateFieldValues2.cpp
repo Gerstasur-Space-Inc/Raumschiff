@@ -47811,11 +47811,11 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5691[1] =
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5692[1] = 
 {
-	U3C_XRPrevViewProjMatrixNoCameraTransU3Ee__FixedBuffer_tA783AD6F072D98F39C0A8270FB7680B663C10BA7::get_offset_of_FixedElementField_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3C_XRViewProjMatrixNoCameraTransU3Ee__FixedBuffer_t5C0713F3A53F4055355B6D0EBC72CC1D65BB61DC::get_offset_of_FixedElementField_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5693[1] = 
 {
-	U3C_XRViewProjMatrixNoCameraTransU3Ee__FixedBuffer_t5C0713F3A53F4055355B6D0EBC72CC1D65BB61DC::get_offset_of_FixedElementField_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	U3C_XRPrevViewProjMatrixNoCameraTransU3Ee__FixedBuffer_tA783AD6F072D98F39C0A8270FB7680B663C10BA7::get_offset_of_FixedElementField_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5694[1] = 
 {

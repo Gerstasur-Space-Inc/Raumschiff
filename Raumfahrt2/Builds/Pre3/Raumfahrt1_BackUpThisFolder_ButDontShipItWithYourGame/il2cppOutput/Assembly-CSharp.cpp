@@ -13450,12 +13450,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpaceShipMovement_Move_m7CF8BD912054B06A
 		float L_5;
 		L_5 = Mathf_Lerp_m8A2A50B945F42D579EDF44D5EE79E85A4DA59616(L_0, L_2, ((float)il2cpp_codegen_multiply((float)L_3, (float)L_4)), /*hidden argument*/NULL);
 		__this->set_rollInput_21(L_5);
-		// yawInput = inputs.Yaw;
+		// yawInput = inputs.Yaw * 2;
 		MovementInputs_tF79B727ADFE0209CA37018C2EBA226FBAD7A8C83 * L_6 = ___inputs0;
 		NullCheck(L_6);
 		float L_7;
 		L_7 = MovementInputs_get_Yaw_m13C74E3900504FCA4B9DFE575B5A0FD12CC274F1_inline(L_6, /*hidden argument*/NULL);
-		__this->set_yawInput_16(L_7);
+		__this->set_yawInput_16(((float)il2cpp_codegen_multiply((float)L_7, (float)(2.0f))));
 		// activeYawSpeed = Mathf.Lerp(activeYawSpeed, yawInput * yawSpeed, yawAcceleration * Time.deltaTime);
 		float L_8 = __this->get_activeYawSpeed_15();
 		float L_9 = __this->get_yawInput_16();
@@ -13466,7 +13466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpaceShipMovement_Move_m7CF8BD912054B06A
 		float L_13;
 		L_13 = Mathf_Lerp_m8A2A50B945F42D579EDF44D5EE79E85A4DA59616(L_8, ((float)il2cpp_codegen_multiply((float)L_9, (float)L_10)), ((float)il2cpp_codegen_multiply((float)L_11, (float)L_12)), /*hidden argument*/NULL);
 		__this->set_activeYawSpeed_15(L_13);
-		// transform.Rotate(0, activeYawSpeed * Time.deltaTime * 0.01f , rollInput * rollSpeed * Time.deltaTime, Space.Self);
+		// transform.Rotate(0, activeYawSpeed * Time.deltaTime , rollInput * rollSpeed * Time.deltaTime, Space.Self);
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_14;
 		L_14 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
 		float L_15 = __this->get_activeYawSpeed_15();
@@ -13477,7 +13477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpaceShipMovement_Move_m7CF8BD912054B06A
 		float L_19;
 		L_19 = Time_get_deltaTime_mCC15F147DA67F38C74CE408FB5D7FF4A87DA2290(/*hidden argument*/NULL);
 		NullCheck(L_14);
-		Transform_Rotate_mE77655C011C18F49CAD740CED7940EF1C7000357(L_14, (0.0f), ((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)L_15, (float)L_16)), (float)(0.00999999978f))), ((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)L_17, (float)L_18)), (float)L_19)), 1, /*hidden argument*/NULL);
+		Transform_Rotate_mE77655C011C18F49CAD740CED7940EF1C7000357(L_14, (0.0f), ((float)il2cpp_codegen_multiply((float)L_15, (float)L_16)), ((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)L_17, (float)L_18)), (float)L_19)), 1, /*hidden argument*/NULL);
 		// activeforwardSpeed = Mathf.Lerp(activeforwardSpeed, inputs.verticalInput * forwardSpeed, forwardAcceleration * Time.deltaTime);
 		float L_20 = __this->get_activeforwardSpeed_7();
 		MovementInputs_tF79B727ADFE0209CA37018C2EBA226FBAD7A8C83 * L_21 = ___inputs0;
@@ -13588,9 +13588,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpaceShipMovement__ctor_m92D928BA0479A71
 		__this->set_strafeAcceleration_11((2.0f));
 		// private float forwardAcceleration = 2.5f, strafeAcceleration = 2f, hoverAcceleration = 2f;
 		__this->set_hoverAcceleration_12((2.0f));
-		// public float yawSpeed = 5f, yawAcceleration = 1.2f;
-		__this->set_yawSpeed_13((5.0f));
-		// public float yawSpeed = 5f, yawAcceleration = 1.2f;
+		// public float yawSpeed = 20f, yawAcceleration = 1.2f;
+		__this->set_yawSpeed_13((20.0f));
+		// public float yawSpeed = 20f, yawAcceleration = 1.2f;
 		__this->set_yawAcceleration_14((1.20000005f));
 		// public float lookrateSpeed = 90f;
 		__this->set_lookrateSpeed_17((90.0f));

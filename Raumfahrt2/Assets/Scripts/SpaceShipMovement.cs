@@ -10,7 +10,7 @@ public class SpaceShipMovement : MonoBehaviour
     private float activeforwardSpeed , activeStrafeSpeed, activeHoverSpeed;
     private float forwardAcceleration = 2.5f, strafeAcceleration = 2f, hoverAcceleration = 2f;
 
-    public float yawSpeed = 5f, yawAcceleration = 1.2f;
+    public float yawSpeed = 20f, yawAcceleration = 1.2f;
     private float activeYawSpeed, yawInput;
     public float lookrateSpeed = 90f;
     private Vector2 lookInput, screenCenter, mouseDistance;
@@ -36,34 +36,17 @@ public class SpaceShipMovement : MonoBehaviour
 
     private void Move(MovementInputs inputs)
     {
-        /*  lookInput = inputs.lookInput;
-
-          mouseDistance.x = (lookInput.x - inputs.screenWidth / 2) / inputs.screenHeight / 2;
-          mouseDistance.y = (lookInput.y - inputs.screenHeight / 2) / inputs.screenHeight / 2;
-
-          mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
-
-          rollInput = Mathf.Lerp(rollInput, inputs.rollInput, rollAcceleration * Time.deltaTime);
-
-          transform.Rotate(-mouseDistance.y * lookrateSpeed * Time.deltaTime, mouseDistance.x * lookrateSpeed * Time.deltaTime, rollInput * rollSpeed * Time.deltaTime, Space.Self);
-
-          activeforwardSpeed = Mathf.Lerp(activeforwardSpeed, inputs.verticalInput * forwardSpeed, forwardAcceleration * Time.deltaTime);
-          activeStrafeSpeed = Mathf.Lerp(activeStrafeSpeed, inputs.horizontalInput * strafeSpeed, strafeAcceleration * Time.deltaTime);
-          activeHoverSpeed = Mathf.Lerp(activeHoverSpeed, inputs.hoverInput * hoverSpeed, hoverAcceleration * Time.deltaTime);
-
-          transform.position += transform.forward * activeforwardSpeed * Time.deltaTime + transform.right * activeStrafeSpeed * Time.deltaTime + transform.up * activeHoverSpeed * Time.deltaTime;
-        */
-
+        
         
 
         rollInput = Mathf.Lerp(rollInput, inputs.rollInput, rollAcceleration * Time.deltaTime);
 
         // transform.Rotate(-mouseDistance.y * lookrateSpeed * Time.deltaTime, mouseDistance.x * lookrateSpeed * Time.deltaTime, rollInput * rollSpeed * Time.deltaTime, Space.Self);
-       
 
-        yawInput = inputs.Yaw;
+
+        yawInput = inputs.Yaw * 2;
         activeYawSpeed = Mathf.Lerp(activeYawSpeed, yawInput * yawSpeed, yawAcceleration * Time.deltaTime);
-        transform.Rotate(0, activeYawSpeed * Time.deltaTime * 0.01f , rollInput * rollSpeed * Time.deltaTime, Space.Self);
+        transform.Rotate(0, activeYawSpeed * Time.deltaTime , rollInput * rollSpeed * Time.deltaTime, Space.Self);
         
         activeforwardSpeed = Mathf.Lerp(activeforwardSpeed, inputs.verticalInput * forwardSpeed, forwardAcceleration * Time.deltaTime);
         activeStrafeSpeed = Mathf.Lerp(activeStrafeSpeed, inputs.horizontalInput * strafeSpeed, strafeAcceleration * Time.deltaTime);
