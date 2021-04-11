@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
 public class SpaceShipMovement : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class SpaceShipMovement : MonoBehaviour
 
     public Camera mainCam;
     public Camera playerCam;
+
+    public GameObject projectile;
 
     private void Start()
     {
@@ -57,10 +60,10 @@ public class SpaceShipMovement : MonoBehaviour
       
     }
 
+ //run on server, called on client
 
     #region Commands
 
-
-
+  
     #endregion
 }
