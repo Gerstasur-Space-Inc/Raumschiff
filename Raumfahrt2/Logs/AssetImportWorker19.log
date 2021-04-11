@@ -15,14 +15,14 @@ E:/ALLES/Code/Github/Raumschiff1/Raumfahrt2
 -logFile
 Logs/AssetImportWorker19.log
 -srvPort
-63186
+63257
 Successfully changed project path to: E:/ALLES/Code/Github/Raumschiff1/Raumfahrt2
 E:/ALLES/Code/Github/Raumschiff1/Raumfahrt2
 Using Asset Import Pipeline V2.
 Unable to join player connection multicast group.
 
-Refreshing native plugins compatible for Editor in 411.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 808.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.03 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/ALLES/Code/Github/Raumschiff1/Raumfahrt2/Assets
@@ -32,55 +32,30 @@ Direct3D:
     Renderer: Intel(R) UHD Graphics (ID=0x9b41)
     Vendor:   
     VRAM:     3997 MB
-    Driver:   27.20.100.8935
+    Driver:   30.0.100.9360
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.016264 seconds.
+Registered in 0.026810 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 345.92 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 378.97 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.775 seconds
+- Completed reload, in 18.068 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.020431 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 416.64 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Find all reader and writers took 475 milliseconds
-Script Module: UnityEngine.UI.dll
-Weave behaviours and messages took282 milliseconds
-Find all reader and writers took 316 milliseconds
-Script Module: Unity.RenderPipelines.Core.Runtime.dll
-Weave behaviours and messages took151 milliseconds
-Find all reader and writers took 624 milliseconds
-Script Module: UnityEngine.TestRunner.dll
-Weave behaviours and messages took71 milliseconds
-Find all reader and writers took 318 milliseconds
-Script Module: Unity.RenderPipelines.HighDefinition.Runtime.dll
-Weave behaviours and messages took550 milliseconds
-Find all reader and writers took 223 milliseconds
-Script Module: SimpleWebTransport.dll
-Weave behaviours and messages took12 milliseconds
+Registered in 0.133856 seconds.
